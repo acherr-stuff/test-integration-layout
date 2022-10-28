@@ -1,0 +1,129 @@
+.header {
+  background-image: url("../images/banner.png");
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.header-container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.banner-form {
+  display: grid;
+  grid-template-areas: "col-1 col-2" "col-3 col-3";
+  grid-gap: 24px;
+  max-width: 570px;
+  min-width: 570px;
+}
+.banner-control {
+  border: 2px solid #E0E0E0;
+  border-radius: 3px;
+  color: white;
+  background-color: transparent;
+  min-width: 270px;
+  min-height: 50px;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+.banner-control::placeholder {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  /* White */
+  color: #FFFFFF;
+}
+.banner-control:focus {
+  outline: none;
+}
+
+.col-1 {
+  grid-area: col-1;
+}
+.col-2 {
+  grid-area: col-2;
+}
+.col-3 {
+  grid-area: col-3;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: Roboto-Medium;
+  src: url("../fonts/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: Roboto-Bold;
+  src: url("../fonts/Roboto-Bold.ttf");
+}
+body, header, section, h1, h2, h3, h4, h5, h6, p, a {
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 90px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 38px;
+  line-height: 57px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 414px) {
+  h1 {
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 18px;
+    line-height: 57px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+.btn {
+  color: white;
+}
+.btn-green {
+  padding-top: 21px;
+  padding-bottom: 21px;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13.3px;
+  line-height: 15px;
+  text-transform: uppercase;
+  background: #34C176;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=styles.css.map */

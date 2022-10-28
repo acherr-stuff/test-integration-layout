@@ -1,0 +1,66 @@
+@import "variables.scss";
+
+.header {
+  background-image: url("../images/banner.png");
+  padding-top: 200px;
+  padding-bottom: 200px;
+  &-container {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+}
+
+.banner {
+
+  &-form {
+    display: grid;
+    grid-template-areas: "col-1 col-2" "col-3 col-3";
+    grid-gap: 24px;
+    max-width: 570px;
+    min-width: 570px;
+  }
+
+  &-control {
+    border: 2px solid $gray;
+    border-radius: 3px;
+    color: white;
+    background-color: transparent;
+    min-width: 270px;
+    min-height: 50px;
+    padding-left: 20px;
+    // margin-bottom: 1rem;
+    box-sizing: border-box;
+
+    &::placeholder {
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+
+      /* White */
+
+      color: #FFFFFF;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.col {
+  &-1 {
+    grid-area: col-1;
+  }
+
+  &-2 {
+    grid-area: col-2;
+  }
+
+  &-3 {
+    grid-area: col-3;
+  }
+}
