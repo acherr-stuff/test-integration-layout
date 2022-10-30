@@ -1,0 +1,84 @@
+@import "variables.scss";
+
+.container {
+  padding: 0 40px;
+  margin-bottom: 50px;
+}
+
+.content {
+  margin-top: 40px;
+  display: flex;
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.column {
+  width: 30%;
+
+  @media screen and (max-width: 1200px) {
+    width: 47%;
+  }
+
+  //@media screen and (max-width: 599px) {
+  //  width: 100%;
+  //}
+}
+
+.input {
+  @include arial-text;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #DEDEDE;
+
+
+  &::placeholder {
+    @include arial-text;
+  }
+}
+
+.btn {
+  border-radius: 3px;
+  @include arial-text;
+  text-align: center;
+  height: 40px;
+  outline: none;
+  color: $black;
+  border: none;
+  cursor: pointer;
+
+  &-yellow {
+    background-color: $yellow;
+  }
+
+  &-white {
+    border: 1px solid #DEDEDE;
+    background-color: white;
+  }
+
+  &-search {
+    width: 145px;
+    border-radius: 0px 3px 3px 0px;
+    margin-left: -1px;
+  }
+
+  &-sort {
+    background-color: $light-yellow;
+    width: 100px;
+    height: 30px;
+  }
+
+  &-close {
+    margin-left: 10px;
+    width: 117px;
+  }
+
+  &-checkout {
+    width: 100%;
+    font-weight: 700;
+  }
+
+}

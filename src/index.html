@@ -2,11 +2,286 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Music Box - _acherr</title>
+    <title>Test Layout</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="section header">
+    <header class="header">
+        <p class="header-title">
+            Шапка сайта
+        </p>
     </header>
+    <div class="container">
+        <div class="search">
+            <div class="search-menu">
+                <form action="" class="search-form">
+                    <object class="search-icon" type="image/svg+xml" data="images/Frame.svg" >
+                        <img src="images/Frame.svg" width="17" height="17" alt="image format png" />
+                    </object>
+                    <input class="search-input input" type="text" placeholder="Поиск...">
+                    <button class="btn btn-yellow btn-search">Найти</button>
+                </form>
+                <button class="btn btn-white btn-close">Закрыть</button>
+            </div>
+            <div class="search-results">
+                <div class="search-results-top">
+                    <h2 class="search-results__title title">Результаты по запросу</h2>
+                    <div class="search-results__desc desc">
+                        <p>Показаны результаты для “Запрос пользозвателя”. Вы искали “Зопрос пользователя”.</p>
+                    </div>
+                </div>
+                <ul class="search-results-list">
+                    <li class="search-results-item">
+                        <div class="image"></div>
+                        <div class="info">
+                            <p class="title">Название категории</p>
+                            <p class="count">134 товара</p>
+                        </div>
+                    </li>
+                    <li class="search-results-item">
+                        <div class="image"></div>
+                        <div class="info">
+                            <p class="title">Название категории</p>
+                            <p class="count">134 товара</p>
+                        </div>
+                    </li>
+                    <li class="search-results-item">
+                        <div class="image">
+
+                        </div>
+                        <div class="info">
+                            <p class="title">Название категории</p>
+                            <p class="count">134 товара</p>
+                        </div>
+                    </li>
+                    <li class="search-results-item">
+                        <div class="image">
+
+                        </div>
+                        <div class="info">
+                            <p class="title">Название категории</p>
+                            <p class="count">134 товара</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="content">
+            <aside class="filters">
+                <div class="categories">
+                    <p class="categories-title filter-title">Все категории</p>
+                    <ul class="categories-list">
+                        <li class="categories-item">
+                            <a href="#" class="categories-link">Категория в которой нашли что-то <span class="subtitle">(ххх)</span></a>
+                        </li>
+                        <li class="categories-item">
+                            <a href="#" class="categories-link">Категория в которой нашли что-то <span class="subtitle">(ххх)</span></a>
+                        </li>
+                        <li class="categories-item">
+                            <a href="#" class="categories-link">Категория в которой нашли что-то <span class="subtitle">(ххх)</span></a>
+                        </li>
+                        <li class="categories-item">
+                            <a href="#" class="categories-link">Категория в которой нашли что-то <span class="subtitle">(ххх)</span></a>
+                        </li>
+                        <li class="categories-item">
+                            <a href="#" class="categories-link">Категория в которой нашли что-то <span class="subtitle">(ххх)</span></a>
+                        </li>
+                        <li class="categories-item">
+                            <a href="#" class="categories-link">Категория в которой нашли что-то <span class="subtitle">(ххх)</span></a>
+                        </li>
+                        <li class="categories-item">
+                            <a href="#" class="categories-link">Категория в которой нашли что-то <span class="subtitle">(ххх)</span></a>
+                        </li>
+                        <li class="categories-item">
+                            <a href="#" class="categories-link">Ещё 10 категорий...</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="price">
+                    <p class="filter-title"><b>Цена, валюта</b></p>
+                    <div class="price-range">
+                        <span>от</span>
+                        <input class="input price-input" type="text">
+                        <span>до</span>
+                        <input class="input price-input" type="text">
+                        <span>Р</span>
+                    </div>
+                    <div class="slider-container">
+                        <div class="slider-track"></div>
+                        <input type="range" min="0" max="100" value="5" id="slider-1" oninput="slideOne()">
+                        <input type="range" min="0" max="100" value="95" id="slider-2" oninput="slideTwo()">
+                    </div>
+                </div>
+                <div class="brands">
+                    <p class="brands-title filter-title"><b>Бренды: </b><span class="clear">Очистить</span></p>
+                    <div class="brands-selector">
+                        <ul>
+                            <li>
+                                <input class="input" type="checkbox" id="brand1" /><label for="brand1">Бренд</label><span class="count">(xxx)</span>
+                            </li>
+                            <li>
+                                <input class="input" type="checkbox" id="brand2" /><label for="brand2">Бренд</label><span class="count">(xxx)</span>
+                            </li>
+                            <li>
+                                <input class="input" type="checkbox" id="brand3" /><label for="brand3">Бренд</label><span class="count">(xxx)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <main class="catalog">
+                <div class="sort">
+                    <div class="sort-left">
+                        <div class="sort-label">Сортировать по:</div>
+                        <div class="sort-item active">популярности</div>
+                        <div class="sort-item">сначала дешевые</div>
+                        <div class="sort-item">сначала дорогие</div>
+                    </div>
+                    <div class="sort-right">
+                        <div class="sort-label">показывать по</div>
+                        <select class="sort-select">
+                            <option>9</option>
+                            <option>12</option>
+                            <option>24</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="sort buttons">
+                    <button class="btn btn-sort">Уточнение</button>
+                    <button class="btn btn-sort">Уточнение</button>
+                    <button class="btn btn-sort">Уточнение</button>
+                    <button class="btn btn-sort">Уточнение</button>
+                </div>
+                <div class="catalog-items">
+                    <div class="columns">
+                        <div class="column col-4 md-col-6 sm-col-12">
+                            <div class="item">
+                                <div class="item-image"></div>
+                                <ul class="item-content">
+                                    <li class="item-title">
+                                        Наименование товара, которое не более 2 строк
+                                    </li>
+                                    <li class="item-price">ХХ ХХХ , $ <span>ХХ ХХХ $</span></li>
+                                </ul>
+                                <button class="btn btn-yellow btn-checkout">Кнопка</button>
+                            </div>
+                        </div>
+
+                        <div class="column col-4 md-col-6 sm-col-12">
+                            <div class="item">
+                                <div class="item-image"></div>
+                                <ul class="item-content">
+                                    <li class="item-title">
+                                        Наименование товара, которое не более 2 строк
+                                    </li>
+                                    <li class="item-price">ХХ ХХХ , $ <span>ХХ ХХХ $</span></li>
+                                </ul>
+                                <button class="btn btn-yellow btn-checkout">Кнопка</button>
+                            </div>
+                        </div>
+
+                        <div class="column col-4 md-col-6 sm-col-12">
+                            <div class="item">
+                                <div class="item-image"></div>
+                                <ul class="item-content">
+                                    <li class="item-title">
+                                        Наименование товара, которое не более 2 строк
+                                    </li>
+                                    <li class="item-price">ХХ ХХХ , $ <span>ХХ ХХХ $</span></li>
+                                </ul>
+                                <button class="btn btn-yellow btn-checkout">Кнопка</button>
+                            </div>
+                        </div>
+                        <div class="column col-4 md-col-6 sm-col-12">
+                            <div class="item">
+                                <div class="item-image"></div>
+                                <ul class="item-content">
+                                    <li class="item-title">
+                                        Наименование товара, которое не более 2 строк
+                                    </li>
+                                    <li class="item-price">ХХ ХХХ , $ <span>ХХ ХХХ $</span></li>
+                                </ul>
+                                <button class="btn btn-yellow btn-checkout">Кнопка</button>
+                            </div>
+                        </div>
+                        <div class="column col-4 md-col-6 sm-col-12">
+                            <div class="item">
+                                <div class="item-image"></div>
+                                <ul class="item-content">
+                                    <li class="item-title">
+                                        Наименование товара, которое не более 2 строк
+                                    </li>
+                                    <li class="item-price">ХХ ХХХ , $ <span>ХХ ХХХ $</span></li>
+                                </ul>
+                                <button class="btn btn-yellow btn-checkout">Кнопка</button>
+                            </div>
+                        </div>
+                        <div class="column col-4 md-col-6 sm-col-12">
+                            <div class="item">
+                                <div class="item-image"></div>
+                                <ul class="item-content">
+                                    <li class="item-title">
+                                        Наименование товара, которое не более 2 строк
+                                    </li>
+                                    <li class="item-price">ХХ ХХХ , $ <span>ХХ ХХХ $</span></li>
+                                </ul>
+                                <button class="btn btn-yellow btn-checkout">Кнопка</button>
+                            </div>
+                        </div>
+                        <div class="column col-4 md-col-6 sm-col-12">
+                            <div class="item">
+                                <div class="item-image"></div>
+                                <ul class="item-content">
+                                    <li class="item-title">
+                                        Наименование товара, которое не более 2 строк
+                                    </li>
+                                    <li class="item-price">ХХ ХХХ , $ <span>ХХ ХХХ $</span></li>
+                                </ul>
+                                <button class="btn btn-yellow btn-checkout">Кнопка</button>
+                            </div>
+                        </div>
+                        <div class="column col-4 md-col-6 sm-col-12">
+                            <div class="item">
+                                <div class="item-image"></div>
+                                <ul class="item-content">
+                                    <li class="item-title">
+                                        Наименование товара, которое не более 2 строк
+                                    </li>
+                                    <li class="item-price">ХХ ХХХ , $ <span>ХХ ХХХ $</span></li>
+                                </ul>
+                                <button class="btn btn-yellow btn-checkout">Кнопка</button>
+                            </div>
+                        </div>
+                        <div class="column col-4 md-col-6 sm-col-12">
+                            <div class="item">
+                                <div class="item-image"></div>
+                                <ul class="item-content">
+                                    <li class="item-title">
+                                        Наименование товара, которое не более 2 строк
+                                    </li>
+                                    <li class="item-price">ХХ ХХХ , $ <span>ХХ ХХХ $</span></li>
+                                </ul>
+                                <button class="btn btn-yellow btn-checkout">Кнопка</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <ul class="pagination-list">
+                        <li class="pagination-item">2</li>
+                        <li class="pagination-item active">3</li>
+<!--                        <li class="pagination-item">...</li>-->
+                        <li class="pagination-item">13</li>
+                        <div class="arrow"></div>
+                    </ul>
+                </div>
+            </main>
+        </div>
+
+    </div>
+
+
+    <script src="scripts/price-slider.js"></script>
 </body>
 </html>

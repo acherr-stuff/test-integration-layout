@@ -1,0 +1,16 @@
+@import "variables.scss";
+
+.header {
+    height: 100px;
+    background-color: $black;
+    padding-left: 24px;
+    display: table;
+    width: 100%;
+
+    &-title {
+        color: $white;
+        @include arial-text;
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
