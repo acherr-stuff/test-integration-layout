@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Layout</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -21,7 +22,8 @@
                     <input class="search-input input" type="text" placeholder="Поиск...">
                     <button class="btn btn-yellow btn-search">Найти</button>
                 </form>
-                <button class="btn btn-white btn-close">Закрыть</button>
+                <button class="btn btn-white btn-close"><span class="desc">Закрыть</span><span class="mobile">X</span></button>
+<!--                <button class="btn btn-white btn-close">X</button>-->
             </div>
             <div class="search-results">
                 <div class="search-results-top">
@@ -68,7 +70,7 @@
 
         </div>
         <div class="content">
-            <aside class="filters">
+            <aside id="filters" class="filters">
                 <div class="categories">
                     <p class="categories-title filter-title">Все категории</p>
                     <ul class="categories-list">
@@ -131,6 +133,7 @@
                 </div>
             </aside>
             <main class="catalog">
+<!--                <div class="open-filters"><button id="open-filters">Фильтры</button></div>-->
                 <div class="sort">
                     <div class="sort-left">
                         <div class="sort-label">Сортировать по:</div>
@@ -147,7 +150,7 @@
                         </select>
                     </div>
                 </div>
-                <div class="sort buttons">
+                <div class="sort-buttons">
                     <button class="btn btn-sort">Уточнение</button>
                     <button class="btn btn-sort">Уточнение</button>
                     <button class="btn btn-sort">Уточнение</button>
@@ -280,8 +283,7 @@
         </div>
 
     </div>
-
-
+    <script src="scripts/filters-button.js"></script>
     <script src="scripts/price-slider.js"></script>
 </body>
 </html>

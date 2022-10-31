@@ -2,7 +2,6 @@
 
 .catalog {
   width: 100%;
-  //padding-left: 40px;
 
   .sort {
     display: flex;
@@ -12,10 +11,17 @@
 
     &-left {
       display: flex;
+
+      @media screen and (max-width: 1200px) {
+        flex-direction: column;
+      }
     }
 
     &-label {
       margin-right: 10px;
+      @media screen and (max-width: 1200px) {
+        margin-bottom: 15px;
+      }
     }
 
     &-item {
@@ -23,6 +29,12 @@
       margin-right: 15px;
       cursor: pointer;
       height: fit-content;
+
+      @media screen and (max-width: 1200px) {
+        margin-bottom: 10px;
+        margin-right: 0;
+
+      }
     }
 
     &-item.active {
@@ -47,7 +59,7 @@
       background-color: $white;
     }
 
-    &.buttons {
+    &-buttons {
       justify-content: left;
       margin-top: 5px;
       gap: 10px;

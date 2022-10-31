@@ -8,6 +8,9 @@
 .content {
   margin-top: 40px;
   display: flex;
+  @media screen and (max-width: 800px) {
+    flex-wrap: wrap;
+  }
 }
 
 .columns {
@@ -23,9 +26,6 @@
     width: 47%;
   }
 
-  //@media screen and (max-width: 599px) {
-  //  width: 100%;
-  //}
 }
 
 .input {
@@ -74,6 +74,24 @@
   &-close {
     margin-left: 10px;
     width: 117px;
+    .mobile {
+      display: none;
+    }
+
+    @media screen and (max-width: 800px) {
+      width: fit-content;
+      padding-left: 10px;
+      padding-right: 10px;
+
+      .mobile {
+        display: block;
+      }
+
+      .desc {
+        display: none;
+      }
+
+    }
   }
 
   &-checkout {
@@ -82,3 +100,13 @@
   }
 
 }
+
+#open-filters {
+  display: none;
+
+  @media screen and (max-width: 800px) {
+    display: block;
+  }
+}
+
+
