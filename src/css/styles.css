@@ -93,9 +93,15 @@
 .btn-yellow {
   background-color: #F1BD45;
 }
+.btn-yellow:hover {
+  background-color: #F4A900;
+}
 .btn-white {
   border: 1px solid #DEDEDE;
   background-color: white;
+}
+.btn-white:hover {
+  background-color: #DEDEDE;
 }
 .btn-search {
   width: 145px;
@@ -164,6 +170,8 @@
   position: absolute;
   left: 16px;
   top: 11px;
+  border-right: 1px solid #8B8B8B;
+  padding-right: 12px;
 }
 .search-input {
   flex-grow: 1;
@@ -226,6 +234,7 @@
   }
 }
 .search-results-item {
+  cursor: pointer;
   display: flex;
   border-right: 1px solid #B9B9B9;
   padding-right: 20px;
@@ -251,6 +260,7 @@
   height: 60px;
   background-color: #C4C4C4;
   border-radius: 3px;
+  min-width: 60px;
 }
 .search-results-item .info {
   padding-left: 10px;
@@ -272,6 +282,9 @@
   line-height: 16px;
   color: #8B8B8B;
   margin-top: 9px;
+}
+.search-results-item:hover .title {
+  text-decoration: underline;
 }
 
 @font-face {
@@ -311,6 +324,9 @@
 }
 .filters .categories-link {
   color: #5375B7;
+}
+.filters .categories-link:hover {
+  color: #002F55;
 }
 .filters .categories-link span {
   font-size: 12px;
@@ -507,6 +523,11 @@
   margin-right: 15px;
   cursor: pointer;
   height: fit-content;
+  width: fit-content;
+}
+.catalog .sort-item:hover {
+  text-decoration: underline;
+  color: #002F55;
 }
 @media screen and (max-width: 1200px) {
   .catalog .sort-item {
@@ -517,6 +538,9 @@
 .catalog .sort-item.active {
   color: #000000;
   border-bottom: 1px solid #F1BD45;
+}
+.catalog .sort-item.active:hover {
+  text-decoration: none;
 }
 .catalog .sort-right {
   display: flex;
@@ -535,17 +559,24 @@
   position: relative;
   top: -7px;
   background-color: #FFFFFF;
+  cursor: pointer;
 }
 .catalog .sort-buttons {
   justify-content: left;
   margin-top: 5px;
   gap: 10px;
 }
+.catalog .sort-buttons .btn:hover {
+  background-color: #F1BD45;
+}
 .catalog-items {
   margin-top: 20px;
 }
 .catalog .item {
   margin-bottom: 40px;
+}
+.catalog .item:hover .item-image {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 13px;
 }
 .catalog .item-image {
   width: 100%;
@@ -569,6 +600,10 @@
   line-height: 130%;
   letter-spacing: 0.01em;
   margin-bottom: 18px;
+}
+.catalog .item-title:hover {
+  color: #5375B7;
+  text-decoration: underline;
 }
 .catalog .item-price {
   font-family: OpenSans;
@@ -601,6 +636,9 @@
 .catalog .pagination-item {
   opacity: 0.5;
   cursor: pointer;
+}
+.catalog .pagination-item:hover {
+  opacity: 1;
 }
 .catalog .pagination-item.active {
   opacity: 1;

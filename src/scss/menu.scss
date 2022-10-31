@@ -20,9 +20,8 @@
     position: absolute;
     left: 16px;
     top: 11px;
-    //width: 17px;
-    //height: 17px;
-    //background-image: url("../images/Frame.svg");
+    border-right: 1px solid $strong-gray;
+    padding-right: 12px;
   }
 
   &-input {
@@ -89,6 +88,7 @@
     }
 
     &-item {
+      cursor: pointer;
 
       @media screen and (max-width: 800px) {
         width: 90%;
@@ -116,6 +116,7 @@
         height: 60px;
         background-color: $dark-gray;
         border-radius: 3px;
+        min-width: 60px;
       }
 
       .info {
@@ -135,6 +136,11 @@
           color: $text-gray;
           margin-top: 9px;
         }
+      }
+    }
+    &-item:hover {
+      .title {
+        text-decoration: underline;
       }
     }
   }

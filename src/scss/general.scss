@@ -32,7 +32,8 @@
   @include arial-text;
   outline: none;
   border-radius: 3px;
-  border: 1px solid #DEDEDE;
+  border: 1px solid $gray;
+
 
 
   &::placeholder {
@@ -54,10 +55,19 @@
     background-color: $yellow;
   }
 
+  &-yellow:hover {
+    background-color: $dark-yellow;
+  }
+
   &-white {
-    border: 1px solid #DEDEDE;
+    border: 1px solid $gray;
     background-color: white;
   }
+
+  &-white:hover {
+    background-color: $gray;
+  }
+
 
   &-search {
     width: 145px;

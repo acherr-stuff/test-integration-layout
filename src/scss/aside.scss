@@ -11,12 +11,6 @@
   margin-right: 12px;
   pointer-events: auto;
 }
-//
-//@media screen and (max-width: 599px) {
-//  #filters {
-//    display: none;
-//  }
-//}
 
 .filters {
   width: 290px;
@@ -45,6 +39,10 @@
     }
     &-link {
       color: $blue;
+
+      &:hover {
+        color: $dark-blue;
+      }
 
       span {
         font-size: 12px;

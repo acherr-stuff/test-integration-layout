@@ -29,6 +29,12 @@
       margin-right: 15px;
       cursor: pointer;
       height: fit-content;
+      width: fit-content;
+
+      &:hover {
+        text-decoration: underline;
+        color: $dark-blue;
+      }
 
       @media screen and (max-width: 1200px) {
         margin-bottom: 10px;
@@ -40,6 +46,10 @@
     &-item.active {
       color: $black;
       border-bottom: 1px solid #F1BD45;
+
+      &:hover {
+        text-decoration: none;
+      }
     }
 
     &-right {
@@ -57,12 +67,25 @@
       position: relative;
       top: -7px;
       background-color: $white;
+      cursor: pointer;
+
+      //option {
+      //  background-color: $white;
+      //  border: 1px solid #DEDEDE;
+      //  border-radius: 3px;
+      //  @include open-sans-text;
+      //}
     }
+
 
     &-buttons {
       justify-content: left;
       margin-top: 5px;
       gap: 10px;
+
+      .btn:hover {
+        background-color: $yellow;
+      }
     }
   }
 
@@ -72,6 +95,12 @@
 
   .item {
     margin-bottom: 40px;
+
+    &:hover {
+        .item-image {
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 13px;
+        }
+    }
 
     &-image {
       width: 100%;
@@ -95,6 +124,11 @@
       line-height: 130%;
       letter-spacing: 0.01em;
       margin-bottom: 18px;
+
+      &:hover {
+        color: $blue;
+        text-decoration: underline;
+      }
     }
 
     &-price {
@@ -126,6 +160,10 @@
     &-item {
       opacity: 0.5;
       cursor: pointer;
+
+      &:hover {
+        opacity: 1;
+      }
     }
 
     &-item.active {
